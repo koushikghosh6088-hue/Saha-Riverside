@@ -40,15 +40,15 @@ const Header: React.FC = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled || isOpen ? 'glass-morphism shadow-2xl' : 'bg-transparent'}`}>
-            <div className="container mx-auto px-6 py-4">
+            <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
                 <div className="flex justify-between items-center">
-                    <a href="#" className={`font-serif text-3xl font-bold transition-all duration-300 text-gradient hover:scale-105 transform`}>Saha Riverside Banquet</a>
-                    <nav className="hidden md:flex space-x-8">
+                    <a href="#" className={`font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold transition-all duration-300 text-gradient hover:scale-105 transform truncate max-w-xs sm:max-w-none`}>Saha Riverside Banquet</a>
+                    <nav className="hidden md:flex space-x-4 lg:space-x-8">
                         {navLinks.map((link, index) => (
                             <a 
                                 key={link.name} 
                                 href={link.href} 
-                                className={`text-lg font-medium transition-all duration-300 text-text-light hover:text-accent-gold hover:-translate-y-1 relative group`}
+                                className={`text-sm lg:text-base font-medium transition-all duration-300 text-text-light hover:text-accent-gold hover:-translate-y-1 relative group whitespace-nowrap`}
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
                                 {link.name}

@@ -19,23 +19,23 @@ const Hero: React.FC = () => {
                 Your browser does not support the video tag.
             </video>
             
-            <div className="relative z-20 text-center px-6 max-w-6xl mx-auto">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight mb-6 text-gradient">
+            <div className="relative z-20 text-center px-4 sm:px-6 max-w-full mx-auto">
+                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-4 sm:mb-6 text-gradient">
                     Saha Riverside Banquet
                 </h1>
-                <p className="text-xl md:text-2xl lg:text-3xl mb-10 max-w-4xl mx-auto text-text-medium leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-10 max-w-4xl mx-auto text-text-medium leading-relaxed px-2">
                     Premier venue for weddings, corporate events, and special celebrations. Experience luxury dining and impeccable service by the sacred Ganges.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
                     <a
                         href="#contact"
-                        className="inline-block bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-navy font-bold py-4 px-12 rounded-full text-lg hover:from-yellow-500 hover:to-accent-gold transition-all duration-500 transform hover:scale-105 shine-effect"
+                        className="w-full sm:w-auto inline-block bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-navy font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-base sm:text-lg hover:from-yellow-500 hover:to-accent-gold transition-all duration-500 transform hover:scale-105 shine-effect"
                     >
                         Book Your Event
                     </a>
                     <a
                         href="#venues"
-                        className="inline-block border-2 border-accent-gold text-accent-gold font-bold py-4 px-12 rounded-full text-lg hover:bg-accent-gold hover:text-primary-navy transition-all duration-500"
+                        className="w-full sm:w-auto inline-block border-2 border-accent-gold text-accent-gold font-bold py-3 sm:py-4 px-8 sm:px-12 rounded-full text-base sm:text-lg hover:bg-accent-gold hover:text-primary-navy transition-all duration-500"
                     >
                         View Venues
                     </a>

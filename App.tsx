@@ -18,7 +18,7 @@ import FloatingButtons from './components/FloatingButtons';
 
 function App() {
   return (
-    <div className="bg-primary-navy text-text-light font-sans min-h-screen">
+    <div className="bg-primary-navy text-text-light font-sans min-h-screen overflow-x-hidden max-w-full">
       <Header />
       <main className="relative bg-primary-navy -mt-1">
         <Hero />

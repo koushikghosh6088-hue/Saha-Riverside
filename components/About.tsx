@@ -8,7 +8,7 @@ const About: React.FC = () => {
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent-gold/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-gold/3 rounded-full blur-2xl"></div>
             
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="relative group">
                         <div className="absolute -inset-4 bg-gradient-to-r from-accent-gold/20 to-transparent rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
@@ -30,13 +30,13 @@ const About: React.FC = () => {
                     
                     <div className="space-y-8">
                         <div className="space-y-6">
-                            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 sm:mb-8">
                                 <span className="text-gradient">Welcome to</span>
                                 <br />
                                 <span className="text-text-light">Saha Riverside Banquet</span>
                             </h2>
                             
-                            <div className="space-y-6 text-lg leading-relaxed">
+                            <div className="space-y-4 sm:space-y-6 text-sm sm:text-base lg:text-lg leading-relaxed">
                                 <p className="text-text-medium relative pl-6">
                                     <span className="absolute left-0 top-2 w-2 h-2 bg-accent-gold rounded-full"></span>
                                     Located on the serene banks of the holy Ganges, Saha Riverside Banquet is the premier venue for weddings, corporate events, and special celebrations. With over 20 years of experience in hospitality, we specialize in creating unforgettable moments.
@@ -49,42 +49,42 @@ const About: React.FC = () => {
                             </div>
                         </div>
                         
-                        <div className="grid grid-cols-2 gap-4 text-center">
-                            <div className="bg-accent-gold/10 p-4 rounded-lg">
-                                <h3 className="text-2xl font-bold text-accent-gold mb-2">20+</h3>
-                                <p className="text-text-medium">Years Experience</p>
+                        <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
+                            <div className="bg-accent-gold/10 p-3 sm:p-4 rounded-lg">
+                                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-gold mb-1 sm:mb-2">20+</h3>
+                                <p className="text-xs sm:text-sm text-text-medium">Years Experience</p>
                             </div>
-                            <div className="bg-accent-gold/10 p-4 rounded-lg">
-                                <h3 className="text-2xl font-bold text-accent-gold mb-2">1000+</h3>
-                                <p className="text-text-medium">Events Hosted</p>
+                            <div className="bg-accent-gold/10 p-3 sm:p-4 rounded-lg">
+                                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-gold mb-1 sm:mb-2">1000+</h3>
+                                <p className="text-xs sm:text-sm text-text-medium">Events Hosted</p>
                             </div>
-                            <div className="bg-accent-gold/10 p-4 rounded-lg">
-                                <h3 className="text-2xl font-bold text-accent-gold mb-2">5</h3>
-                                <p className="text-text-medium">Banquet Halls</p>
+                            <div className="bg-accent-gold/10 p-3 sm:p-4 rounded-lg">
+                                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-gold mb-1 sm:mb-2">5</h3>
+                                <p className="text-xs sm:text-sm text-text-medium">Banquet Halls</p>
                             </div>
-                            <div className="bg-accent-gold/10 p-4 rounded-lg">
-                                <h3 className="text-2xl font-bold text-accent-gold mb-2">24/7</h3>
-                                <p className="text-text-medium">Support</p>
+                            <div className="bg-accent-gold/10 p-3 sm:p-4 rounded-lg">
+                                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-accent-gold mb-1 sm:mb-2">24/7</h3>
+                                <p className="text-xs sm:text-sm text-text-medium">Support</p>
                             </div>
                         </div>
                         
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                             <a 
                                 href="#venues" 
-                                className="group inline-flex items-center bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-navy font-bold py-4 px-8 rounded-full hover:from-yellow-500 hover:to-accent-gold transition-all duration-500 transform hover:scale-105 shine-effect"
+                                className="w-full sm:w-auto group inline-flex items-center justify-center bg-gradient-to-r from-accent-gold to-yellow-500 text-primary-navy font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:from-yellow-500 hover:to-accent-gold transition-all duration-500 transform hover:scale-105 shine-effect text-sm sm:text-base"
                             >
                                 View Our Halls
-                                <svg className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                                 </svg>
                             </a>
                             
                             <a 
                                 href="#contact" 
-                                className="group inline-flex items-center border-2 border-accent-gold text-accent-gold font-bold py-4 px-8 rounded-full hover:bg-accent-gold hover:text-primary-navy transition-all duration-500 transform hover:scale-105"
+                                className="w-full sm:w-auto group inline-flex items-center justify-center border-2 border-accent-gold text-accent-gold font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-accent-gold hover:text-primary-navy transition-all duration-500 transform hover:scale-105 text-sm sm:text-base"
                             >
                                 Get Quote
-                                <svg className="ml-2 w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </a>
