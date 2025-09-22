@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saha's Riverside Digital Portfolio</title>
+    <meta name="description" content="A futuristic, dynamic, and vibrant portfolio website for Saha's Riverside, a premium riverside banquet venue with modern sophistication.">
+    
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0"
+  }
+}
+</script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-navy': '#0d1b2a',
+                        'secondary-slate': '#1b263b',
+                        'accent-gold': '#d4af37',
+                        'text-light': '#f0f0f0',
+                        'text-medium': '#a0a0a0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #0d1b2a;
+        overflow-x: hidden;
+        line-height: 1;
+      }
+      #root {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      
+      main {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      
+      /* Enhanced Styling */
+      .glass-morphism {
+        background: rgba(27, 38, 59, 0.25);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(212, 175, 55, 0.18);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #d4af37, #f4e06d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .shine-effect {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .shine-effect::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+        transition: left 0.8s;
+      }
+      
+      .shine-effect:hover::before {
+        left: 100%;
+      }
+      
+      .floating-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite alternate;
+      }
+      
+      @keyframes pulse-glow {
+        from { box-shadow: 0 0 20px #d4af37; }
+        to { box-shadow: 0 0 30px #d4af37, 0 0 40px #d4af37; }
+      }
+      
+      .parallax-bg {
+        transform: translateZ(-1px) scale(2);
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <div id="floating-buttons-root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
